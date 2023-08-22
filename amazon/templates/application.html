@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <title>Forms</title>
+    <style>
+      .container{
+        margin: left;
+        width: 600px;
+        background-color: rgb(214, 236, 235) ;
+      }
+      h1{
+        text-align: center;
+      }
+      btn{
+        align-items: center;
+      }
+      body{
+        background-color: white;
+      }
+      .form-group.required .control-label:after{
+        content:"*";
+        color:red;
+      }
+    </style>
+  </head>
+  <h1>KCE STUDENT APPLICATION FORM</h1>
+  <body>
+  <div class="container">
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+
+    <div class="form-group required">
+      <label class="control-label">Admission No</label>
+      <input id="text1" name="adno" type="text" class="form-control" required>
+    </div>
+
+    <div class="form-group required">
+      <span class="control-label">Student Name</span>
+      <input name="name" type="text" aria-label="name" class="form-control">
+    </div>
+ 
+  <div class="form-group required">
+    <label class="control-label">Student Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+    <div class="form-group required">
+      <span class="control-label">Student's Mobile Number</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+    <div class="form-group required">
+      <span class="control-label">Father Name</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+    <div class="form-group required">
+      <span class="control-label">Father's Mobile Number</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">Father's Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+
+    <div class="form-group required">
+      <span class="control-label">Father's Qualification</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+    <div class="form-group required">
+      <span class="control-label">Father's occupation</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+    <div class="form-group required">
+      <span class="control-label">Father's Annual Revenue</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+    <div class="form-group required">
+      <span class="control-label">Mother Name</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+    <div class="form-group required">
+      <span class="control-label">Mother's Mobile Number</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Mother's Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+
+    <div class="form-group required">
+      <span class="control-label">Mother's Qualification</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+    <div class="form-group required">
+      <span class="control-label">Mother's occupation</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <span class="input-group-text">Mother's Annual Revenue</span>
+      <input type="text" aria-label="name" class="form-control">
+    </div>
+
+
+  <div class="form-group required">
+    <label class="control-label">Permanant Address</label>
+    <input type="text" class="form-control" id="inputAddress">
+  </div>
+
+  <div class="form-group required">
+    <label class="control-label">Temporary Address</label>
+    <input type="text" class="form-control" id="inputAddress2">
+  </div>
+  
+  <div class="form-group required">
+    <label class="control-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  
+  <div class="form-group required">
+    <label class="control-label">State</label>
+    <select id="inputState" class="form-control">
+      <option selected>Tamil Nadu</option>
+      <option>Kerala</option>
+      <option>Andhra Pradesh</option>
+      <option>Telangana</option>
+      <option>others</option>
+    </select>
+  </div>
+  <div class="form-group required">
+    <label class="control-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+
+  <div class="form-group required">
+    <label class="control-label">Branch</label>
+    <select multiple class="form-control" id="exampleSelect2">
+      <option>Engineering</option>
+      <option>Arts</option>
+      <option>Science</option>
+      <option>Management</option>
+    </select>
+  </div>
+
+  <div class="form-group required">
+    <label class="control-label">Degree</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>B.E.,</option>
+      <option>B.Tech.,</option>
+      <option>B.Sc.,</option>
+      <option>M.Sc.,</option>
+      <option>M.Tech.,</option>
+    </select>
+  </div>
+
+  <div class="form-group required">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required> acknowlegement
+  </div>
+  <button id="btn" type="submit" class="btn btn-primary">Submit</button>
+  </div> 
+  </form>
+
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["adno"].value;
+  if (x == "") {
+    document.getElementById("text1").style.borderColor = "red";
+    alert("Kindly full the Mandatory fields");
+    return false;
+  }
+}
+</script>
+</body>
+</html>
